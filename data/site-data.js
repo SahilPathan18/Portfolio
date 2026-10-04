@@ -7,11 +7,11 @@ const SITE_DATA = {
   name: "Sahil Pathan",
 
   nav: [
-    { label: "Home",     href: "index.html",    icon: "home" },
-    { label: "About",    href: "about.html",    icon: "about" },
+    { label: "Home", href: "index.html", icon: "home" },
+    { label: "About", href: "about.html", icon: "about" },
     { label: "Projects", href: "projects.html", icon: "projects" },
     { label: "Services", href: "services.html", icon: "services" },
-    { label: "Contact",  href: "contact.html",  icon: "contact" }
+    { label: "Contact", href: "contact.html", icon: "contact" }
   ],
 
   roles: [
@@ -23,13 +23,13 @@ const SITE_DATA = {
 
   skills: [
     { name: "JavaScript / TypeScript", level: 85 },
-    { name: "React / Next.js",         level: 80 },
-    { name: "Node.js / Express",       level: 78 },
-    { name: "Python / Data Analysis",  level: 75 },
-    { name: "Docker / CI-CD",          level: 72 },
-    { name: "AWS / Linux Servers",     level: 68 },
-    { name: "Flutter / Android",       level: 70 },
-    { name: "MongoDB / SQL",           level: 75 }
+    { name: "React / Next.js", level: 80 },
+    { name: "Node.js / Express", level: 78 },
+    { name: "Python / Data Analysis", level: 75 },
+    { name: "Docker / CI-CD", level: 72 },
+    { name: "AWS / Linux Servers", level: 68 },
+    { name: "Flutter / Android", level: 70 },
+    { name: "MongoDB / SQL", level: 75 }
   ],
 
   marquee: [
@@ -96,7 +96,8 @@ const SITE_DATA = {
       image: "assets/oracle-preview.png",
       tags: ["Node.js", "Express", "MongoDB", "Netlify"],
       desc: "Official college fest management platform featuring live scoreboards, event registrations, interactive schedules, and an authenticated admin panel.",
-      github: "https://github.com/SPC-Pegasus/ORACLE-26"
+      live: "https://oracle.spcpegasus.com",
+      github: "https://github.com/SahilPathan18/Oracle-2026"
     },
     {
       title: "College Result Analyser",
@@ -107,67 +108,10 @@ const SITE_DATA = {
     },
     {
       title: "Hostel Management System",
-      category: "fullstack",
-      tags: ["Team Project", "Biometric Auth", "Real-Time Alerts"],
+      category: "app",
+      tags: ["Flutter", "Team Project", "Biometric Auth", "Real-Time Alerts"],
       desc: "Built with a 4-person team for our college: registration and login, warden/parent permission flows, biometric gate access, geofenced alerts, and a direct warden-student chat.",
-      live: "#",
-      code: "#"
-    },
-    {
-      title: "Deploy Pipeline",
-      category: "devops",
-      tags: ["Docker", "GitHub Actions", "AWS EC2"],
-      desc: "Automated CI/CD pipeline that builds, tests and deploys containerized apps to a cloud server on every push.",
-      live: "#",
-      code: "#"
-    },
-    {
-      title: "SplitEase",
-      category: "web",
-      tags: ["React", "Node.js", "MongoDB"],
-      desc: "Browser-based expense-splitting app for groups, with real-time balance calculation.",
-      live: "#",
-      code: "#"
-    },
-    {
-      title: "LUXE AI",
-      category: "fullstack",
-      tags: ["Next.js", "OpenAI API", "Tailwind"],
-      desc: "AI-powered resume analyzer that scores resumes and suggests improvements instantly.",
-      live: "#",
-      code: "#"
-    },
-    {
-      title: "Apex Motorsport",
-      category: "web",
-      tags: ["HTML/CSS", "JavaScript"],
-      desc: "Static encyclopedia site for hypercars with filterable specs and a clean gallery view.",
-      live: "#",
-      code: "#"
-    },
-    {
-      title: "Campus Connect",
-      category: "app",
-      tags: ["Flutter", "Firebase"],
-      desc: "Mobile app for BCA students to track timetables, assignments and exam schedules.",
-      live: "#",
-      code: "#"
-    },
-    {
-      title: "TaskFlow API",
-      category: "fullstack",
-      tags: ["Express", "PostgreSQL", "Docker"],
-      desc: "Secure task-management REST API with role-based auth and rate limiting.",
-      live: "#",
-      code: "#"
-    },
-    {
-      title: "EventHub",
-      category: "app",
-      tags: ["Flutter", "Node.js"],
-      desc: "Event registration and payment app built for a college tech fest.",
-      live: "#",
-      code: "#"
+      github: "https://github.com/SahilPathan18/Hostel-Management-system"
     }
   ],
 
