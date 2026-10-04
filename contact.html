@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sahil Pathan</title>
+<meta name="description" content="Get in touch with Sahil Pathan for freelance or internship work.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https:; script-src 'self';">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div class="social-rail" id="social-rail-root"></div>
+
+<div class="nav-outer"><div id="nav-root"></div></div>
+
+<main class="wrap">
+  <section>
+    <div class="section-head reveal">
+      <div class="eyebrow">Get In Touch</div>
+      <h2 class="section-title">Let's build something</h2>
+      <p class="section-sub">Have a project in mind, or an internship opening? Send a message and I'll reply soon.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="info-row">
+          <div class="icon" id="ci-mail"></div>
+          <div><h4>Email</h4><p id="ci-email-text"></p></div>
+        </div>
+        <div class="info-row">
+          <div class="icon" id="ci-pin"></div>
+          <div><h4>Location</h4><p id="ci-location-text"></p></div>
+        </div>
+        <div class="info-row">
+          <div class="icon" id="ci-clock"></div>
+          <div><h4>Response time</h4><p>Usually within 24–48 hours.</p></div>
+        </div>
+      </div>
+
+      <form id="contact-form" class="reveal" novalidate>
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="80">
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="120">
+        </div>
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" required maxlength="2000"></textarea>
+        </div>
+        <!-- honeypot: hidden from real users, left blank by them, filled by bots -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="cf-company">Company</label>
+          <input id="cf-company" name="company" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-solid">Send Message</button>
+        <p class="form-status" id="form-status"></p>
+        <p class="form-note">Your details are only used to reply to you — never shared or stored elsewhere.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div id="footer-root"></div></div></footer>
+
+<script src="data/site-data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

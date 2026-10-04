@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Sahil Pathan</title>
+<meta name="description" content="Web, app and DevOps projects by Sahil Pathan.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https:; script-src 'self';">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div class="social-rail" id="social-rail-root"></div>
+
+<div class="nav-outer"><div id="nav-root"></div></div>
+
+<main class="wrap">
+  <section>
+    <div class="section-head reveal">
+      <div class="eyebrow">Selected Work</div>
+      <h2 class="section-title">All projects</h2>
+      <p class="section-sub">Web apps, mobile apps and full-stack builds. Filter by type below.</p>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="app">App</button>
+      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="devops">DevOps</button>
+    </div>
+
+    <div class="grid cols-3" id="projects-grid"></div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div id="footer-root"></div></div></footer>
+
+<script src="data/site-data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

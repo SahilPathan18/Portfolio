@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Pathan — Full-Stack Developer & DevOps Engineer</title>
+<meta name="description" content="Portfolio of Sahil Pathan, a full-stack developer, DevOps engineer and app developer studying BCA.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https:; script-src 'self';">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div class="social-rail" id="social-rail-root"></div>
+
+<div class="nav-outer"><div id="nav-root"></div></div>
+
+<main class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="badge"><span class="dot"></span>Available for freelance work</span>
+        <h1>Hi, I'm Sahil<br>Pathan</h1>
+        <p class="role-line"><span id="role-text"></span><span class="cursor"></span></p>
+        <p class="lede">I build clean, functional web &amp; mobile apps — and I ship and run them myself, with Docker and CI/CD pipelines. Currently pursuing BCA, I bring ideas from code to production.</p>
+
+        <div class="meta-row">
+          <span class="badge" id="location-badge"><span class="dot"></span></span>
+          <span class="badge"><span class="dot"></span>Available Now</span>
+        </div>
+
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-solid">Hire Me</a>
+          <a href="assets/Sahil-Pathan-CV.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
+
+        <div class="follow-row">
+          <span>Follow me:</span>
+          <div class="social-icons" id="hero-social-root"></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="terminal">
+          <div class="terminal-dots"><span></span><span></span><span></span></div>
+          <pre><span class="kw">const</span> <span class="fn">dev</span> = {
+  name: <span class="str">'Sahil Pathan'</span>,
+  roles: [<span class="str">'Full-Stack Dev'</span>, <span class="str">'DevOps Engineer'</span>],
+  studies: <span class="str">'BCA'</span>,
+  stack: [<span class="str">'React'</span>, <span class="str">'Node'</span>, <span class="str">'Docker'</span>, <span class="str">'AWS'</span>],
+  <span class="fn">deploy</span>() {
+    <span class="kw">return</span> <span class="str">'code → shipped → monitored'</span>;
+  }
+};</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee-outer"><div id="marquee-root"></div></div>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section>
+    <div class="section-head reveal">
+      <div class="eyebrow">Selected Work</div>
+      <h2 class="section-title">Featured projects</h2>
+      <p class="section-sub">A few things I've recently built — see everything on the projects page.</p>
+    </div>
+    <div class="grid cols-3" id="projects-grid" data-limit="3"></div>
+    <p style="margin-top:22px;"><a href="projects.html" class="btn btn-outline">View all projects</a></p>
+  </section>
+
+  <!-- ============ SERVICES PREVIEW ============ -->
+  <section>
+    <div class="section-head reveal">
+      <div class="eyebrow">What I Do</div>
+      <h2 class="section-title">Services</h2>
+    </div>
+    <div class="grid cols-3" data-services-root data-limit="3"></div>
+  </section>
+
+</main>
+
+<footer><div class="wrap"><div id="footer-root"></div></div></footer>
+
+<script src="data/site-data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>
