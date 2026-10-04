@@ -33,6 +33,10 @@
   function renderGrid(list, root) {
     root.innerHTML = "";
     list.forEach((p) => root.appendChild(projectCard(p)));
+    // These cards are added after main.js already ran its one-time scroll-
+    // reveal scan, so they need to be picked up explicitly or they'd stay
+    // invisible (opacity:0) forever.
+    if (window.refreshRevealObserver) window.refreshRevealObserver();
   }
 
   document.addEventListener("DOMContentLoaded", () => {

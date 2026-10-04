@@ -134,7 +134,9 @@
 
   /* ---------- SCROLL REVEAL ---------- */
   function initReveal() {
-    const targets = document.querySelectorAll(".reveal");
+    // :not(.in) so calling this again later (after other scripts add more
+    // .reveal elements to the page) doesn't re-touch ones already shown.
+    const targets = document.querySelectorAll(".reveal:not(.in)");
     if (!targets.length) return;
     if (!("IntersectionObserver" in window)) {
       targets.forEach((t) => t.classList.add("in"));
@@ -153,6 +155,11 @@
     );
     targets.forEach((t) => io.observe(t));
   }
+  // Exposed so scripts that render content into the page AFTER this file's
+  // DOMContentLoaded handler has already run (e.g. js/projects.js) can
+  // re-scan for newly-added .reveal elements — otherwise those elements
+  // are never observed and stay stuck at opacity:0.
+  window.refreshRevealObserver = initReveal;
 
   /* ---------- SKILL BARS (about page) ---------- */
   function renderSkills() {
