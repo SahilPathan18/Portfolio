@@ -25,6 +25,7 @@ const SITE_DATA = {
     { name: "JavaScript / TypeScript", level: 85 },
     { name: "React / Next.js",         level: 80 },
     { name: "Node.js / Express",       level: 78 },
+    { name: "Python / Data Analysis",  level: 75 },
     { name: "Docker / CI-CD",          level: 72 },
     { name: "AWS / Linux Servers",     level: 68 },
     { name: "Flutter / Android",       level: 70 },
@@ -32,7 +33,7 @@ const SITE_DATA = {
   ],
 
   marquee: [
-    "JavaScript", "React", "Node.js", "Docker", "MongoDB", "Flutter",
+    "JavaScript", "React", "Node.js", "Python", "Docker", "MongoDB", "Flutter",
     "AWS", "CI/CD", "Linux", "Firebase", "Git", "GitHub Actions"
   ],
 
@@ -89,6 +90,21 @@ const SITE_DATA = {
 
   // category must be one of: "web", "app", "fullstack", "devops"
   projects: [
+    {
+      title: "ORACLE '26",
+      category: "fullstack",
+      image: "assets/oracle-preview.png",
+      tags: ["Node.js", "Express", "MongoDB", "Netlify"],
+      desc: "Official college fest management platform featuring live scoreboards, event registrations, interactive schedules, and an authenticated admin panel.",
+      github: "https://github.com/SPC-Pegasus/ORACLE-26"
+    },
+    {
+      title: "College Result Analyser",
+      category: "app",
+      tags: ["Python", "CustomTkinter", "PyMuPDF", "Pandas"],
+      desc: "High-performance offline desktop analytics tool to parse Bangalore University Tabulation Register PDF ledgers, with interactive dashboards and multi-sheet Excel exports.",
+      github: "https://github.com/SahilPathan18/College-Result-Analyser"
+    },
     {
       title: "Hostel Management System",
       category: "fullstack",
@@ -156,7 +172,7 @@ const SITE_DATA = {
   ],
 
   social: {
-    github: "https://github.com/",
+    github: "https://github.com/SahilPathan18",
     linkedin: "https://linkedin.com/",
     instagram: "https://instagram.com/"
   },

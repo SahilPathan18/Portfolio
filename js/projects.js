@@ -16,16 +16,31 @@
   }
 
   function projectCard(p) {
+    const thumbContent = p.image
+      ? [el("img", { src: p.image, alt: p.title, class: "project-thumb-img", loading: "lazy" })]
+      : [p.title];
+
+    const links = [];
+    if (p.live && p.live !== "#") {
+      links.push(el("a", { href: p.live, target: "_blank", rel: "noopener noreferrer" }, ["Live \u2197"]));
+    }
+    const repo = p.github || p.code;
+    if (repo && repo !== "#") {
+      links.push(el("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, ["GitHub \u2197"]));
+    }
+
+    if (!links.length) {
+      if (p.live) links.push(el("a", { href: p.live, target: "_blank", rel: "noopener noreferrer" }, ["Live \u2197"]));
+      if (repo) links.push(el("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, ["GitHub \u2197"]));
+    }
+
     return el("div", { class: "card project-card reveal" }, [
-      el("div", { class: "project-thumb" }, [p.title]),
+      el("div", { class: "project-thumb" }, thumbContent),
       el("div", { class: "project-body" }, [
         el("h3", {}, [p.title]),
         el("p", {}, [p.desc]),
         el("div", { class: "tag-row" }, p.tags.map((t) => el("span", { class: "tag" }, [t]))),
-        el("div", { class: "project-links" }, [
-          el("a", { href: p.live, target: "_blank", rel: "noopener noreferrer" }, ["Live \u2197"]),
-          el("a", { href: p.code, target: "_blank", rel: "noopener noreferrer" }, ["Code \u2192"])
-        ])
+        el("div", { class: "project-links" }, links)
       ])
     ]);
   }
